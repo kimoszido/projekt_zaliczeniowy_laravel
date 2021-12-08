@@ -1,0 +1,38 @@
+.heading_first{
+    font-family: Bw Modelica Extra Bold;
+    font-size: 3.5rem;
+    padding: $padding;
+    text-transform: uppercase;
+    color: $color-secondary-very-dark;
+}
+
+.heading_sec{
+    font-family: Bw Modelica Bold;
+    font-size: 2rem;
+    padding: $small-padding;
+    text-transform: uppercase;
+    color: $color-secondary-dark;
+}
+
+.heading_thrid{
+    font-family: Bw Modelica Bold;
+    padding: $very-small-padding;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-tertiary-dark;
+}
+
+.heading-four{
+    font-family: Bw Modelica Bold;
+    padding: $very-small-padding;
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    color: $color-secondary-very-dark;
+}
+
+.paragraph{
+    padding: $very-small-padding;
+    font-family: Bw Modelica Regular;
+    font-size: 1.4rem;
+    color: $color-secondary-very-dark;
+}

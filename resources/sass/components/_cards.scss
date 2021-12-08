@@ -1,0 +1,143 @@
+.cards{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: -.5%;
+
+
+}
+
+.card{
+    background-color: $color-tertiary-dark;
+    border-radius: $border_radius_small;
+    height: 100%;
+    width: 32%;
+    margin: .5%;
+
+    display: flex;
+    flex-direction: column;
+    transition: all .2s;
+}
+
+.card__top{
+    height: 100%;
+    display: flex;
+}
+
+.card__img{
+    flex-grow: 1;
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    border-radius: 5px;
+    align-self: stretch;
+    justify-self: stretch;
+
+    transition: all .2s;
+}
+
+.card:hover .card__top{
+    height: 80%;
+}
+
+.card:hover .card__top .card__img{
+    transform: translateY(-1rem);
+
+}
+
+.card__bot{
+
+    padding: $very-small-padding;
+
+    display: flex;
+    flex-direction: column;
+    transform: translateY(4rem);
+    transition: all .2s;
+}
+
+.card:hover .card__bot{
+    transform: translateY(-2rem);
+}
+
+.card__heading{
+    color: $color-secondary-dark;
+    flex: 1;
+    text-align: left;
+}
+
+.card__description{
+    color: $color-secondary-very-dark;
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+}
+
+.card_description-top{
+    display: flex;
+    align-items: center;
+}
+
+.card__acces{
+    font-family: Bw Modelica Extra Bold;
+    font-size: 1.2rem;
+    padding: $very-small-padding;
+    position: relative;
+    width: 50%;
+}
+
+.card__acces_icon{
+    position: absolute;
+    right: 0;
+    top: .5rem;
+}
+
+.card__delivery{
+    font-family: Bw Modelica Regular;
+    font-size: 1.2rem;
+    padding: $small-padding;
+    position: relative;
+    width: 50%;
+}
+
+.card__delivery_icon{
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+
+.card__price{
+    font-family: Bw Modelica Bold;
+    font-size: 1.3rem;
+    padding: $very-small-padding;
+}
+
+.card__buttons{
+    display: flex;
+    justify-content: space-evenly;
+    opacity: 0;
+    transition: all .2s;
+    background-color: $color-tertiary-dark;
+    align-items: center;
+}
+
+.card:hover .card__buttons{
+    opacity: 1;
+    transform: translateY(-20%);
+}
+
+.card:hover .card__buttons_icon,
+.card:hover .card__buttons_icon{
+    display: inline-block;
+}
+
+.card__buttons_icon{
+    flex: 0 0 35%;
+    color: $color-secondary-very-dark;
+    padding: $small-padding;
+    border: none;
+    text-align: right;
+}
+
+.card__buttons_link{
+
+}

@@ -1,0 +1,128 @@
+.login_box{
+    flex: 0 0 20%;
+    font-family: Bw Modelica Bold;
+    text-transform: uppercase;
+    z-index: 1000000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.login__form_box{
+    display: none;
+    opacity: 1;
+    width: 0;
+    flex-direction: column;
+
+    padding: $padding;
+    background-color: $color-secondary-dark;
+    border-radius: .5rem;
+    border: 2px solid $color-tertiary-darker;
+    box-shadow: 0 0 .5rem $color-secondary-dark;
+
+    position: absolute;
+    top: 5rem;
+    right: 40%;
+
+
+    transition: all .3s;
+}
+
+.login__checkbox{
+    display: none;
+
+
+    &:checked ~ .login__form_box{
+        display: flex;
+        opacity: 1;
+        width: auto;
+    }
+    &:checked ~ .login__label{
+        //display: none;
+        position: relative;
+    }
+
+    &:checked + .login_box{
+        //flex-direction: column;
+    }
+
+    &:checked ~ .rejestration_form .rejestration_form__submit{
+        //display: none;
+    }
+}
+
+.login__form{
+    border-radius: 5px;
+    display: flex;
+    width: 100%;
+    transition: all .3s;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.form__bot{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form__bot_link{
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: Bw Modelica Thin;
+    color: $color-tertiary-dark;
+    text-align: center;
+}
+
+.login_form__login_submit{
+    flex: 0 0 40%;
+    padding: $very-small-padding;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login__label{
+    cursor: pointer;
+    padding: $very-small-padding;
+    text-align: center;
+    padding: $very-small-padding;
+
+}
+
+.login__label span{
+    text-align: center;
+}
+
+.login_form__input{
+    font-family: Bw Modelica Light;
+    font-size: 1.2rem;
+    padding: $very-small-padding;
+}
+
+.login_form__label{
+    padding: $small-padding;
+    color: $color-tertiary-dark;
+}
+
+.registration__link{
+    padding: $very-small-padding;
+    text-decoration: none;
+}
+
+.login_box__link_accont{
+    font-family: Bw Modelica Bold;
+    font-size: 1.4rem;
+    color: $color-secondary-dark;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.login_box__text{
+    font-family: Bw Modelica Medium;
+    font-size: 1.4rem;
+    color: $color-secondary-dark;
+    text-transform: uppercase;
+}

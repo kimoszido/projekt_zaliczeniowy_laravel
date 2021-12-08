@@ -1,0 +1,95 @@
+.footer{
+    background-color: $color-secondary-very-dark;
+    color: $color-tertiary-dark;
+    padding: $padding;
+
+    display: flex;
+
+}
+
+.footer__info{
+    flex: 0 0 33%;
+    flex-grow: 1;
+    text-align: left;
+    position: relative;
+
+    &::before{
+        content: "";
+        @include border_right;
+    }
+}
+
+.footer__info_name{
+    padding: $padding;
+    font-size: 1.8rem;
+}
+
+.footer__info-copy{
+    padding: $padding;
+    list-style: none;
+    font-family: Bw Modelica Thin;
+    font-size: 1rem;
+}
+
+.footer__info_list{
+    padding: $padding;
+    list-style: none;
+    font-family: Bw Modelica Thin;
+    font-size: 1.2rem;
+}
+
+.list__city{
+
+}
+
+.list__street{
+
+}
+
+.list__regon{
+
+}
+
+.list__nip{
+
+}
+
+.li{
+    padding: $very-small-padding;
+}
+
+.footer__newslett{
+    flex: 0 0 33%;
+    flex-grow: 1;
+    text-align: center;
+    position: relative;
+
+    &::before{
+        content: "";
+        @include border_right;
+    }
+}
+
+.newsletter__form{
+    padding: $padding;
+}
+
+.footer__contact{
+    flex: 0 0 33%;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.footer__contact_content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__contact_list{
+    padding: $padding;
+    list-style: none;
+    font-family: Bw Modelica Thin;
+    font-size: 1.2rem;
+    text-align: left;
+}

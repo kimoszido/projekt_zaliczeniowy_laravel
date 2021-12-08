@@ -1,0 +1,24 @@
+.icon__is_avalible{
+    color: $color-green;
+    padding: .5rem;
+}
+
+.icon__not_avalible{
+    color: $color-red;
+    padding: .5rem;
+}
+
+.icon__delivery{
+
+}
+
+.icon__more{
+    font-size: 1.4rem;
+    border-radius: .5rem;
+    background-color: $color-secondary-very-dark;
+    padding: $small-padding;
+    color: $color-tertiary-dark;
+    width: 100%;
+    height: 100%;
+
+}

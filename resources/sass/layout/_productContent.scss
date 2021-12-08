@@ -1,0 +1,108 @@
+.product__bottom{
+    position: relative;
+}
+
+.product__description{
+    display: flex;
+    flex-direction: column;
+}
+
+.description__box{
+    display: flex;
+    flex-direction: column;
+    background-color: $color-tertiary-dark;
+    border-radius: 10px;
+    box-shadow: 0 0 .5rem $color-secondary;
+}
+
+.features__list{
+    list-style: none;
+    padding: $padding;
+    font-family: Bw Modelica Medium;
+    font-size: 1.4rem;
+    color: $color-secondary-very-dark;
+    background-color: $color-tertiary-dark;
+    border-radius: 10px;
+    box-shadow: 0 0 .5rem $color-secondary;
+}
+
+.features__list_element{
+    padding: $small_padding;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    &:not(:only-child){
+        border-bottom: 1px solid $color-secondary-very-dark;
+    }
+}
+
+.list_element__icon{
+    text-align: center;
+}
+
+.opinions__opinion{
+    background-color: $color-tertiary-dark;
+    border-radius: 10px;
+    box-shadow: 0 0 .5rem $color-secondary;
+    margin-bottom: 2rem;
+}
+
+.opinion__heading{
+    padding: $small-padding;
+    display: flex;
+    flex-direction: column;
+    color: $color-secondary-dark;
+}
+
+.opinion__date{
+    padding: $very_small-padding;
+    font-family: Bw Modelica Light;
+    font-size: 1.2rem;
+
+}
+
+.opinions__form_add{
+
+}
+
+.form_add__textarea{
+    width: 100%;
+    margin-bottom: 2rem;
+    padding: $small_padding;
+    border: 1px solid $color-secondary;
+    box-shadow: 0 0 .2rem $color-secondary;
+    border-radius: 5px;
+    resize: none;
+    font-family: Bw Modelica Medium;
+    font-size: 1.4rem;
+    color: $color-secondary-dark;
+}
+
+.product__other{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: $padding_top_bot;
+}
+
+.other_card__link{
+    text-decoration: none;
+}
+
+.product__other_card{
+    background-color: $color-tertiary-dark;
+    color: $color-secondary-dark;
+    border-radius: 10px;
+    box-shadow: 0 0 .5rem $color-secondary;
+    transition: all .2s;
+
+    &:hover{
+        box-shadow: 0 0 .8rem $color-secondary-dark;
+    }
+}
+
+.other_card__img{
+    width: 20rem;
+}

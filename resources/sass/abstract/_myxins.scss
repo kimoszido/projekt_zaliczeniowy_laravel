@@ -1,0 +1,9 @@
+@mixin border_right{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 1px;
+    background-color: $color-tertiary-dark;
+}
+
+

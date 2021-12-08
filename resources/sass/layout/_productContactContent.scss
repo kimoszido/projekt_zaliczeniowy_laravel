@@ -1,0 +1,88 @@
+.product_contact{
+    display: flex;
+    padding: $padding;
+}
+
+.product_contact__details{
+    display: flex;
+    align-self: stretch;
+    flex-grow: 1;
+}
+
+.details__left_list{
+    padding: $very-small-padding;
+    font-family: Bw Modelica Regular;
+    font-size: 1.4rem;
+    color: $color-secondary-very-dark;
+    list-style: none;
+    position: relative;
+
+    &::before{
+        content: "";
+        background-color: $color-secondary-dark;
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        right: 0;
+    }
+}
+
+.details__right_paragraph{
+    display: flex;
+    flex-direction: column;
+}
+
+.product_contact__form{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.product_contact__form_input{
+    padding: $small-padding;
+    font-family: Bw Modelica Medium;
+    font-size: 1.4rem;
+
+    &:not(:last-child){
+        margin-bottom: 1rem;
+    }
+}
+
+.form__checkbox_box{
+    padding: $small-padding;
+    position: relative;
+}
+
+.form__input_checkbox{
+    display: none;
+}
+
+.input_checkbox__text{
+    font-family: Bw Modelica Medium;
+    font-size: 1.2rem;
+    padding-left: 3rem;
+}
+
+.form__input_label{
+    position: absolute;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 3px;
+    top: 1rem;
+    left: 1rem;
+    border: 1px solid $color-secondary-dark;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label__icon{
+    opacity: 0;
+    //position: absolute;
+    padding: auto;
+}
+
+.form__input_checkbox:checked + .form__input_label .label__icon{
+    opacity: 1;
+}

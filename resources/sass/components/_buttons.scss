@@ -1,0 +1,47 @@
+.btn_first{
+    font-family: Bw Modelica Bold;
+    font-size: 1.2rem;
+    border: 1px solid $color-secondary-dark;
+    border-radius: .5rem;
+    padding: $small-padding;
+    box-shadow: 0 0 .5rem $color-secondary-light;
+    background-color: $color-secondary;
+    color: $color-tertiary-dark;
+    cursor: pointer;
+}
+
+.btn_second{
+    font-family: Bw Modelica Bold;
+    font-size: 1.2rem;
+    border: 1px solid $color-secondary-dark;
+    border-radius: .5rem;
+    padding: $small-padding;
+    box-shadow: 0 0 .5rem $color-secondary;
+    background-color: $color-tertiary-dark;
+    color: $color-secondary;
+    cursor: pointer;
+}
+
+.btn_third{
+    font-family: Bw Modelica Bold;
+    font-size: 1.2rem;
+    border: 1px solid $color-secondary-dark;
+    border-radius: .5rem;
+    padding: $small-padding;
+    box-shadow: 0 0 .5rem $color-tertiary-dark;
+    background-color: $color-secondary-dark;
+    color: $color-tertiary-dark;
+    cursor: pointer;
+}
+
+.btn_four{
+    font-family: Bw Modelica Bold;
+    font-size: 1.2rem;
+    border: 1px solid $color-secondary-dark;
+    border-radius: .5rem;
+    padding: $very-small-padding;
+    box-shadow: 0 0 .2rem $color-tertiary-dark;
+    background-color: $color-secondary-light;
+    color: $color-tertiary;
+    cursor: pointer;
+}

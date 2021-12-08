@@ -1,0 +1,35 @@
+.product__navigation{
+    position: sticky;
+    top: 0;
+    background-color: $color-tertiary-dark;
+    padding: $padding;
+    border-radius: 10px;
+    box-shadow: 0 0 .5rem $color-secondary;
+    display: flex;
+    justify-content: space-around;
+}
+
+.product__navigation_link:link,
+.product__navigation_link:visited{
+    text-decoration: none;
+    text-transform: uppercase;
+    flex-grow: 1;
+    text-align: center;
+    border-radius: 5px;
+    color: $color-tertiary;
+    font-family: Bw Modelica Medium;
+    font-size: 1.4rem;
+    background-color: $color-secondary-dark;
+    padding: $small-padding;
+    transition: all .2s;
+
+    &:not(:last-child){
+        margin-right: 1rem;
+    }
+
+    &:hover{
+        background-color: $color-tertiary-darker;
+        color: $color-secondary;
+        box-shadow: 0 0 .5rem $color-secondary-light;
+    }
+}

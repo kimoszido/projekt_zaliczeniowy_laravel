@@ -1,0 +1,73 @@
+.header{
+    font-size: 1.2rem;
+    background-color: $color-white;
+    border-bottom: 1px solid $color-black;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header__top{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo{
+    flex-grow: 1;
+    padding: $small-padding;
+}
+
+.header__login_box{
+    display: flex;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.header__search{
+    flex: 0 0 35%;
+}
+
+.header__search_input{
+    font-family: Bw Modelica Light;
+    font-size: inherit;
+    padding: $small-padding;
+    border-radius: $border_radius_small;
+    width: 90%;
+    transition: all .2s;
+    margin-right: -3.25rem;
+
+    &:focus{
+        outline: none;
+        width: 100%;
+    }
+}
+
+.header__search_button{
+    border: none;
+    background-color: transparent;
+    color: $color-secondary-dark;
+    cursor: pointer;
+
+    &:focus{
+    outline: none;
+    }
+
+    &:active{
+        transform: translateY($border_radius_small);
+    }
+}
+
+.header__my_shop_card{
+    font-family: Bw Modelica Bold;
+    text-transform: uppercase;
+
+    flex-grow: 1;
+}
+
+.header__my_shop_card__link{
+    text-decoration: none;
+}
+
